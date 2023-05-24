@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ahmet</groupId>
-	<artifactId>spring-boot-tutorial</artifactId>
+	<artifactId>tutorial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-tutorial</name>
-	<description>Spring Boot Tutorial</description>
+	<name>tutorial</name>
+	<description>Tutorial</description>
 	<properties>
 		<java.version>20</java.version>
 		<org.mapstruct.version>1.5.5.Final</org.mapstruct.version>

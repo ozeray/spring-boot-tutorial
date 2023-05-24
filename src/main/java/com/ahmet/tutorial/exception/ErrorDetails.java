@@ -1,4 +1,4 @@
-package com.ahmet.springboottutorial.exception;
+package com.ahmet.tutorial.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

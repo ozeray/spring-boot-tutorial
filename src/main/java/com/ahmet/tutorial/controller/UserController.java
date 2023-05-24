@@ -1,7 +1,7 @@
-package com.ahmet.springboottutorial.controller;
+package com.ahmet.tutorial.controller;
 
-import com.ahmet.springboottutorial.dto.UserDto;
-import com.ahmet.springboottutorial.service.UserService;
+import com.ahmet.tutorial.dto.UserDto;
+import com.ahmet.tutorial.service.UserService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

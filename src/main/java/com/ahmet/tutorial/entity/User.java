@@ -1,4 +1,4 @@
-package com.ahmet.springboottutorial.entity;
+package com.ahmet.tutorial.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

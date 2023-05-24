@@ -1,6 +1,6 @@
-package com.ahmet.springboottutorial.service;
+package com.ahmet.tutorial.service;
 
-import com.ahmet.springboottutorial.dto.UserDto;
+import com.ahmet.tutorial.dto.UserDto;
 
 import java.util.List;
 

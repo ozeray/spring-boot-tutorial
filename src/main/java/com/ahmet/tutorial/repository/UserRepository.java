@@ -1,6 +1,6 @@
-package com.ahmet.springboottutorial.repository;
+package com.ahmet.tutorial.repository;
 
-import com.ahmet.springboottutorial.entity.User;
+import com.ahmet.tutorial.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

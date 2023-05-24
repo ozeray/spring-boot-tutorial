@@ -1,4 +1,4 @@
-package com.ahmet.springboottutorial;
+package com.ahmet.tutorial;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringBootTutorialApplication {
+public class TutorialApplication {
 
 	@Bean
 	ModelMapper modelMapper() {
@@ -14,7 +14,7 @@ public class SpringBootTutorialApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootTutorialApplication.class, args);
+		SpringApplication.run(TutorialApplication.class, args);
 	}
 
 }

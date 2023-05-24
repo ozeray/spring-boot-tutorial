@@ -1,12 +1,12 @@
-package com.ahmet.springboottutorial.service.impl;
+package com.ahmet.tutorial.service.impl;
 
-import com.ahmet.springboottutorial.dto.UserDto;
-import com.ahmet.springboottutorial.entity.User;
-import com.ahmet.springboottutorial.exception.EmailAlreadyExistsException;
-import com.ahmet.springboottutorial.exception.ResourceNotFoundException;
-import com.ahmet.springboottutorial.mapper.AutoUserMapper;
-import com.ahmet.springboottutorial.repository.UserRepository;
-import com.ahmet.springboottutorial.service.UserService;
+import com.ahmet.tutorial.dto.UserDto;
+import com.ahmet.tutorial.entity.User;
+import com.ahmet.tutorial.exception.EmailAlreadyExistsException;
+import com.ahmet.tutorial.exception.ResourceNotFoundException;
+import com.ahmet.tutorial.mapper.AutoUserMapper;
+import com.ahmet.tutorial.repository.UserRepository;
+import com.ahmet.tutorial.service.UserService;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package com.ahmet.springboottutorial.mapper;
+package com.ahmet.tutorial.mapper;
 
-import com.ahmet.springboottutorial.dto.UserDto;
-import com.ahmet.springboottutorial.entity.User;
+import com.ahmet.tutorial.dto.UserDto;
+import com.ahmet.tutorial.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

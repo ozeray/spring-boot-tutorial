@@ -1,13 +1,13 @@
-package com.ahmet.springboottutorial;
+package com.ahmet.tutorial;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootTutorialApplicationTests {
+class TutorialApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

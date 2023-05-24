@@ -1,4 +1,4 @@
-package com.ahmet.springboottutorial.dto;
+package com.ahmet.tutorial.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

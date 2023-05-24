@@ -8,7 +8,6 @@ import com.ahmet.tutorial.mapper.AutoUserMapper;
 import com.ahmet.tutorial.repository.UserRepository;
 import com.ahmet.tutorial.service.UserService;
 import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -37,7 +36,6 @@ public class UserServiceImpl implements UserService {
         return AutoUserMapper.MAPPER.mapToUserDto(savedUser);
     }
 
-    @SneakyThrows
     @Override
     public UserDto getUserById(Long userId) {
         User user = userRepository.findById(userId).orElseThrow(
@@ -56,7 +54,6 @@ public class UserServiceImpl implements UserService {
                 .collect(Collectors.toList());
     }
 
-    @SneakyThrows
     @Override
     public UserDto updateUser(UserDto user) {
         User existingUser = userRepository.findById(user.getId()).orElseThrow(

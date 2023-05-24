@@ -9,7 +9,6 @@ import com.ahmet.springboottutorial.repository.UserRepository;
 import com.ahmet.springboottutorial.service.UserService;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,12 +21,12 @@ public class UserServiceImpl implements UserService {
 
     private UserRepository userRepository;
 
-    private ModelMapper modelMapper;
+//    private ModelMapper modelMapper;
 
     @Override
     public UserDto createUser(UserDto userDto) {
         Optional<User> optionalUser = userRepository.findByEmail(userDto.getEmail());
-        if(optionalUser.isPresent()){
+        if (optionalUser.isPresent()) {
             throw new EmailAlreadyExistsException();
         }
 
@@ -54,7 +53,7 @@ public class UserServiceImpl implements UserService {
 //        return users.stream().map(user -> modelMapper.map(user, UserDto.class))
 //                .collect(Collectors.toList());
         return users.stream().map(AutoUserMapper.MAPPER::mapToUserDto)
-                    .collect(Collectors.toList());
+                .collect(Collectors.toList());
     }
 
     @SneakyThrows
@@ -74,7 +73,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteUser(Long userId) {
-        User existingUser = userRepository.findById(userId).orElseThrow(
+        userRepository.findById(userId).orElseThrow(
                 () -> new ResourceNotFoundException("User", "id", userId)
         );
         userRepository.deleteById(userId);

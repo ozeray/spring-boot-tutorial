@@ -62,9 +62,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
         List<FieldError> errors = ex.getBindingResult().getFieldErrors();
         Map<String, String> errorMap = new HashMap<>();
-        errors.forEach(er -> {
-            errorMap.put(er.getField(), er.getDefaultMessage());
-        });
+        errors.forEach(er -> errorMap.put(er.getField(), er.getDefaultMessage()));
 
         return new ResponseEntity<>(errorMap, HttpStatus.BAD_REQUEST);
     }

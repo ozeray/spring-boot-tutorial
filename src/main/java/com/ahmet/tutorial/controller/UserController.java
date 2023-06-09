@@ -4,7 +4,6 @@ import com.ahmet.tutorial.dto.UserDto;
 import com.ahmet.tutorial.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -23,10 +22,8 @@ public class UserController {
     private UserService userService;
 
     @Operation(summary = "Create user REST API", description = "Save user")
-    @ApiResponses({
-            @ApiResponse(responseCode = "201", description = "Successfully created"),
-            @ApiResponse(responseCode = "400", description = "User already exists")
-    })
+    @ApiResponse(responseCode = "201", description = "Successfully created")
+    @ApiResponse(responseCode = "400", description = "User already exists")
     @PostMapping
     public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto user) {
         UserDto savedUser = userService.createUser(user);
